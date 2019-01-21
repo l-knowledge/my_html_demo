@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居中练习</title>
+    <link href="base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        #box_1 {
+            width: 100%;
+            height: 100%;
+            background: #a2d09f;
+        }
+
+        /*  margin: 0px auto;
+            text-align: center;
+            两者组合 实现水平居中
+        */
+        #box_child1 {
+            width: 100px;
+            height: 100px;
+            background: #cbff5a;
+            margin: 0px auto; /* 意思是让对象上下间隔为0，左右间隔自动 */
+            text-align: center;
+        }
+
+        #box_2 {
+            width: 200px;
+            height: 200px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            background: #5df651;
+        }
+
+        #box_child2 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: red;
+        }
+
+        #box_3 {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #cbff5a;
+        }
+
+        #box_child3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        /* 左右间距  布局填充宽度 */
+        #box_4{
+            width: auto;
+            height: 100px;
+            background: #000;
+            margin: 10px 20px 0px 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box_1">
+    <div id="box_child1">
+
+    </div>
+    <div id="box_2">
+        <div id="box_child2"></div>
+    </div>
+
+
+    <div id="box_3">
+        <div id="box_child3"></div>
+    </div>
+
+    <!-- 左右间距  布局填充宽度-->
+    <div id="box_4">
+
+    </div>
+</div>
+</body>
+</html>

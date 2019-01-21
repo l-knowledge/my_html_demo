@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        /**
+            1.动画
+            animation
+            关键帧动画
+            1）定义动画
+
+            2）调用动画
+                animation: name 时间  infinite （无线循环播放）
+                名字  持续时间 速度变化  延迟时间 播放次数  播放方向（alternate）动画停在最后一帧（forwards）
+         */
+
+        .box{
+            width: 200px;
+            height:200px;
+            border: 2px solid black;
+            -webkit-animation: change 5s ease-in 2s forwards;
+            -o-animation: change 5s ease-in 2s forwards;
+            animation: change 5s ease-in 2s forwards;
+        }
+        @keyframes change {
+            0%{
+                width: 600px;
+                border: 20px solid red;;
+            }
+
+            10%{
+                border-radius: 30%;
+            }
+            15%{
+                border-radius: 40%;
+            }
+            26%{
+                border-radius: 50%;
+            }
+            35%{
+                margin-top: 400px;
+                margin-left: 400px;
+                width: 200px;
+            }
+
+            100%{
+                background-color: pink;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经销商登录页面练习2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: #49d4c1 !important;
+        }
+
+        #login {
+            position: absolute;
+            right: 200px;
+            width: 350px;
+            height: 500px;
+            bottom: 40px;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            height: 20px;
+            color: #ffffff;
+        }
+
+        #login_input {
+            height: 440px;
+            background-image: url("../../img/login-form.png");
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #login_img {
+            width: 50px;
+            height: 50px;
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+
+        .userName, .password, .code, .div_login_btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            border-radius: 3px;
+            border-style: none;
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+
+        .login_btn {
+            width: 250px;
+            height: 30px;
+            border-radius: 3px;
+            border-style: none;
+            background: #21bcff;
+            margin-top: 40px;
+            color: #ffffff;
+        }
+        .show_code{
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #5df651;
+            color: #ffffff;
+            border-style: none;
+            border-radius: 3px;
+            margin-left: 20px;
+        }
+        .input_code{
+            width: 160px;
+            height: 30px;
+        }
+        .code{
+            display: flex;
+            justify-content: center;
+        }
+
+        #left_img{
+            background-size:auto;
+            width:26%;
+            position:absolute;
+            top:24%;
+            left:15%;
+            z-index: 1 ;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img id="left_img" src="../../img/login-bg.png">
+</div>
+<div id="login">
+    <h2>医疗经销商管理系统</h2>
+    <div id="login_input">
+        <img id="login_img" src="../../img/logo.png">
+
+        <div class="userName">
+            <input type="text" placeholder="用户名">
+        </div>
+
+        <div class="password">
+            <input type="password" placeholder="密码">
+        </div>
+
+        <div class="code">
+            <input type="text"  class="input_code" placeholder="验证码">
+            <div class="show_code">1244</div>
+        </div>
+        <div class="div_login_btn">
+            <button class="login_btn">登录</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../libs/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.login_btn').click(function () {
+            location.href="经销商首页页面练习.html"
+        })
+    })
+</script>
+</body>
+</html>

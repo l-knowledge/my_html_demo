@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css IE低版本</title>
+    <style>
+        /**
+            1 条件注释法
+            <!-- [if  ]>
+                代码块
+            <![endif] -->
+
+            2 属性前缀或者后缀
+                -   _   *   #   前缀
+                \0   \9   \9\0  后缀
+                !important  优先级最高
+
+
+
+         */
+        body{
+            background-color: red;
+        }
+
+    </style>
+
+    <!--[if IE 8]>
+    <style>
+        body{
+            background-color: blue;
+        }
+    </style>
+    <![endif] -->
+</head>
+<body>
+    这是主体
+    <!-- [if IE]>
+    这是IE浏览器
+    <![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡隐藏</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #5df651;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box,.box>img,.hidden{
+            width: 300px;
+            height: 600px;
+            transition: all 1s;
+        }
+        .hidden{
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0px;
+            left: 300px;
+        }
+
+
+        .box:hover .hidden{
+            left: 0px;
+        }
+        .box:hover img{
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        .box{
+            overflow: hidden;
+            position: relative;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <img src="../../img/login-form.png">
+        <div class="hidden"></div>
+    </div>
+</body>
+</html>

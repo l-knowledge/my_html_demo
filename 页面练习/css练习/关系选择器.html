@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关系选择器</title>
+    <style>
+        /**
+            1、后代选择器
+            选择器1 选择器2{}
+            选中所有后代
+            2、子代选择器
+            选择器1>选择器2{}
+            选中所有直接子代
+
+            css3新增
+            3、相邻兄弟选择器
+            选择器1+选择器2{}
+            选择平级 相邻 后面的一个兄弟
+
+            4、通用兄弟选择器
+            选择器1~选择器2{}
+            选择后面所有的兄弟
+
+        */
+        .box span{
+            color: red;
+        }
+
+        .box>span{
+            background-color: green;
+        }
+
+        .box+div{
+            font-style: italic;
+        }
+
+        .box~div{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div>1343434</div>
+    <div class="box">
+        <span>儿子span</span>
+        <div>儿子div
+            <span>孙子span</span>
+        </div>
+        <span>儿子span</span>
+    </div>
+    <div>idfdv></div>
+    <div>1343fdasf434</div>
+    <div>lsrrjtsb</div>
+
+</body>
+</html>

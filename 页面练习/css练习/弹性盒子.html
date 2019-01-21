@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子</title>
+    <style>
+        /*
+            1、父容器中的常用属性
+                display：flex；
+                定义一个flex属性
+                子元素默认水平显示
+            新弹性盒子  设置父元素是一个弹性盒，子元素会自动水平排列
+
+            1）、flex-direction:column:
+            设置子元素垂直排列
+            2）、主轴对其方式
+            justify-content:flex-start;默认值 居左
+            justify-content:flex-end;默认值 居右
+            justify-content:center;居中
+            justify-content:space-around;四周
+            justify-content:space-between;之间
+
+            3）、侧轴的对其方式
+            align-items:flex-start;居上
+            align-items:flex-end;居下
+            align-items:center;居中
+
+            2、子元素属性
+            flex-grow:(整数);设置子元素占用父元素的比例
+
+
+        */
+        .container{
+            width: 100%;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container>div{
+            width: 33%;
+            height: 200px;
+            flex-grow: 1;
+        }
+        .one{
+            background-color: magenta;
+        }
+        .two{
+            background-color: #FF7D00;
+        }
+        .three{
+            background-color: #21bcff;
+        }
+        footer{
+            width: 100%;
+            height: 300px;
+            background-color: #5df651;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+<footer></footer>
+</body>
+</html>

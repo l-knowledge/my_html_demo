@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电商首页练习1</title>
+    <link rel="stylesheet" href="base.css" type="text/css">
+    <style>
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        input{
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .header_top_bar a:hover{
+            color: red;
+        }
+        .comWidth{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .leftArea{
+            float: left;
+        }
+        .rightArea{
+            float: right;
+        }
+
+        .header_top_bar{
+            height: 31px;
+            background: #F7F7F7;
+            line-height: 31px;
+        }
+        .collect{
+            background: url("../../img/logo.png") left center no-repeat;
+            padding-left: 59px;
+        }
+
+        .logo_bar{
+            background-color: #1D7AD9;
+            height: 85px;
+        }
+
+        .logo{float: left;margin-top: 19px}
+        .search_box{float: left;width: 430px;margin-top: 23px;padding-left: 185px;}
+        .search_text{width: 350px;height: 35px;
+            float: left;padding-left: 5px}
+        .search_btn{width: 75px;height: 35px;float: right;background: #FF7D00;
+            color: #FFF;}
+
+        .shop{
+            margin-top: 23px;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header_bar">
+        <div class="header_top_bar">
+            <div class="comWidth">
+                <div class="leftArea">
+                    <a href="#" class="collect">搜藏资源</a>
+                </div>
+
+                <div class="rightArea">
+                    欢迎来到！<a href="#">[登录]</a><a href="#">[免费注册]</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo_bar">
+            <div class="comWidth">
+                <div class="search_bar">
+                    <div class="logo">
+                        <a href="#" ><img src="../../img/logo.png" alt="测试"></a>
+                    </div>
+
+                    <div class="search_box">
+                        <input type="text" class="search_text">
+                        <input type="button" value="搜索" class="search_btn">
+                    </div>
+
+                    <div class="shop">
+                        <span class="shop_car fl">购物车</span>
+                        <span class="num fl">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

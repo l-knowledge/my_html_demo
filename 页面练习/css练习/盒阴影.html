@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒阴影</title>
+    <style>
+        /**
+            盒阴影
+            box-shadow:水平方向的位置   垂直方向的位置  模糊度   扩展值   阴影颜色   阴影的位置
+                        正负值           正负值       正值   正负值    颜色值      默认 外阴影
+                         负值往左上 正值往右下                                    inset 内阴影
+                box-shadow：0px 0px 30px red;水平垂直位置都为0 然后设置模糊度，四周就都会有阴影了
+
+                字阴影
+                text-shadow:水平方向的位置   垂直方向的位置  模糊度  颜色
+                              正负值           正负值
+
+         */
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: #5df651;
+            margin: 100px;
+        }
+
+        .box1{
+            box-shadow: 10px 10px 40px red;
+        }
+
+        .box2{
+            box-shadow: -10px -10px 40px red;
+        }
+
+        .box3{
+            box-shadow: 0px 0px 40px red;
+        }
+        .font{
+            text-shadow: 1px 1px 10px red;
+            line-height: 100px;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+
+        <div class="font"> 李先生 </div>
+</body>
+</html>

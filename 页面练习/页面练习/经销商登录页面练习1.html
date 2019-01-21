@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经销商登录页面练习</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main, #right_login_view {
+            width: 100%;
+            height: 100%;
+            background: #21bcff;
+        }
+
+        #login_input_box {
+            position: absolute;
+            width: 400px;
+            height: 70%;
+            border-radius: 5px;
+            background: #a2d09f;
+            right: 300px;
+            display: flex;
+            justify-content: center;
+            bottom: 30px;
+
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            box-shadow: #a2d09f 1px 1px 2px 2px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin-top: 20px;
+            position: relative;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+        h3, h2 {
+            text-align: center;
+        }
+
+        #login_btn {
+            height: 40px;
+            background: #ff00ff;
+            color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #ff00ff;
+        }
+
+        #input_view {
+            justify-self: center;
+            align-self: center;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main">
+    <div id="right_login_view">
+        <div id="login_input_box">
+            <div id="input_view">
+                <h3>图片logo</h3>
+                <div>
+                    <input type="text" placeholder="用户名" id="login_user_name">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="密码" id="login_user_password">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="验证码" id="login_user_code">
+                </div>
+
+                <div>
+                    <input type="button" value="登录" id="login_btn">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../libs/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#login_btn').click(function () {
+            var username = $('#login_user_name').val();
+            if(username==null||username==undefined||username==""){
+                alert('请输入用户名')
+                return
+            }
+            location.href="../../demo/菜单栏页.html"
+        })
+    })
+</script>
+</body>
+</html>

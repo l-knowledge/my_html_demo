@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换动画</title>
+    <style>
+        /**
+            1、转换
+            使元素在形状上或者位置发生一定的改变
+            属性：transform：；四个属性值不区分先后顺序
+            1）位移
+            transform：translate（x,y）
+            当取一个值，代表水平方向，两个值，代表水平垂直方向（负值为左上，正值为右下）
+            transform: translateX();//水平方向
+            transform: translateY();垂直方向
+            transform: translateZ();
+
+            2）旋转
+            transform:rotate(deg)
+            取正值，顺时针旋转，负值，逆时针旋转
+            旋转会旋转真个坐标轴
+            transform:rotateX();
+            transform:rotateY();
+
+            transform-origin:;设置旋转的中心点
+            transform-origin: left top;左上角
+
+            3）缩放
+            transform：scale();
+            取值0-1  缩小
+            >1 放大
+            取值一个值得时候为等比缩放，两个值得时候为 水平和垂直
+            transform：scaleX();水平方向上
+            transform：scaleY();垂直方向上
+
+            4）倾斜
+            transform:skew(xdeg,ydeg)
+            取一个值代表水平方向，两个值代表水平和垂直
+
+            transform:skewX(xdeg)
+            transform:skewY(ydeg)
+
+
+
+         */
+        .box{
+            width: 234px;
+            height: 300px;
+            background-color: pink;
+            margin: 50px;
+        }
+
+        .box:hover{
+            /*transform: translate(0,-5px);*/
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+            /*transform: rotate(30deg);*/
+            transform: translate(0,20px) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

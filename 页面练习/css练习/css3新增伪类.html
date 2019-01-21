@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3新增伪类</title>
+    <style>
+        /**
+            1、选中第一个子元素
+            :first-child
+            2、最后一个子元素
+            :last-child
+
+            3、第几个子元素
+            :nth-child(第几个){}
+
+            odd 奇数
+            even 偶数
+
+            3n 代表3的倍数  几n就代表几的倍数
+         */
+        .one>li:first-child{
+            color: #999999;
+        }
+
+        .one>li:last-child{
+            color: green;
+        }
+
+        .two>li:nth-child(3){
+            color: red;
+        }
+
+        .three>li:nth-child(odd){
+            color: #FF7D00;
+        }
+
+        .three>li:nth-child(even){
+            color: #2c17ff;
+        }
+
+        .four>li:nth-child(3n){
+            color: magenta;
+        }
+
+         .box>div:empty{
+             width: 100px;
+             height: 100px;
+             background: #ff00ff;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+            选中第一个和最后一个改变字体颜色样式
+            .one>li:first-child{
+            color: #999999;
+            }
+
+            .one>li:last-child{
+            color: green;
+            }
+        <ul class="one">
+            <li>111111111</li>
+            <li>111111111</li>
+            <li>111111111</li>
+            <li>111111111</li>
+        </ul>
+        指定选中第几个改变字体颜色
+        .two>li:nth-child(3){
+        color: red;
+        }
+        <ul class="two">
+            <li>222222222</li>
+            <li>222222222</li>
+            <li>222222222</li>
+            <li>222222222</li>
+        </ul>
+        指定奇数偶数改变字体颜色
+        .three>li:nth-child(odd){
+        color: #FF7D00;
+        }
+
+        .three>li:nth-child(even){
+        color: #2c17ff;
+        }
+        <ul class="three">
+            <li>333333333</li>
+            <li>333333333</li>
+            <li>333333333</li>
+            <li>333333333</li>
+        </ul>
+
+        指定x倍数改变字体颜色
+        .four>li:nth-child(3n){
+        color: magenta;
+        }
+        <ul class="four">
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+            <li>444444444</li>
+        </ul>
+        选中空的元素  不包含任何内容
+        .box>div:empty{
+        width: 100px;
+        height: 100px;
+        background: #ff00ff;
+        }
+        <div>1</div>
+        <div></div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
